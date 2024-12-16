@@ -103,6 +103,8 @@ function DisplayData(data) {
     const region = data.location?.region || 'Unknown region';
     const country = data.location?.country || 'Unknown country';
 
+    searchInput.value = `${locationName}, ${region}, ${country}`
+
     data.forecast.forecastday.forEach((forecast, index) => {
         const date = forecast.date || 'Unknown date';
         const dayName = getDayName(date);
