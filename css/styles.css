@@ -1,0 +1,183 @@
+/* ----------General---------- */
+body {
+    background: #1E202B;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 15px 30px;
+    background: #1e202b;
+    color: #019AD8;
+}
+
+.form input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #019AD8;
+    transition: 0.3s all;
+}
+
+form input[type="button"]:hover {
+    background-color: #019bd8af;
+}
+
+/* ----------Navbar---------- */
+.navbar {
+    background-color: #1E202B;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar .navbar-list ul li a {
+    color: #fff;
+}
+
+.active {
+    border: 2px #019AD8 solid;
+    border-radius: 20px;
+    color: #019AD8 !important;
+}
+
+.navbar .navbar-list ul li a:hover {
+    border: 2px #019AD8 solid;
+    border-radius: 20px;
+    color: #019AD8 !important;
+}
+
+/* ----------Search---------- */
+.search {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+
+datalist {
+    position: absolute;
+    max-height: 20em;
+    border: 0 none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+datalist option {
+    font-size: 0.8em;
+    padding: 0.3em 1em;
+    background-color: #1E202B;
+    color: #019AD8;
+    cursor: pointer;
+}
+
+datalist option:hover,
+datalist option:focus {
+    color: #1E202B;
+    background-color: #019AD8;
+    outline: 0 none;
+}
+
+/* ----------Forecast---------- */
+.forecast-container {
+    background: #323544;
+    overflow: hidden;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.forecast-container .forecast .forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-weight: 400;
+}
+
+.forecast-container .forecast:nth-child(even) {
+    background-color: #262936;
+}
+
+.number,
+.forecast-icon {
+    vertical-align: middle;
+}
+
+.forecast-container .forecast.today span {
+    margin-inline: 10px;
+}
+
+.forecast-container .forecast.today span img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.today .temp {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.temp {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.forecast .conditions {
+    color: #019AD8;
+}
+
+.forecast-container .forecast .forecast-content p {
+    font-size: 16px;
+}
+
+/* ----------Footer---------- */
+.footer {
+    background: #262936;
+    padding: 50px 0;
+}
+
+.footer .social-links li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #1e202b;
+    transition: 0.3s all;
+}
+
+.footer .social-links li:hover {
+    background: #009ad8;
+}
+
+.footer .social-links li:hover a {
+    color: #fff;
+}
+
+.footer .social-links a {
+    color: #009ad8;
+    transition: 0.3s all;
+    font-size: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: rgb(191, 193, 200);
+}
+
+/* ----------Media---------- */
+@media (max-width: 991px) {
+    .navbar-list {
+        display: flex;
+        justify-content: space-around;
+    }
+}
