@@ -54,7 +54,8 @@
                 <input class="rounded-5 border-0 focus-ring" type="text" placeholder="Find your location..."
                     id="searchInput" list="locationList">
                 <datalist id="locationList" class="rounded-3"></datalist>
-                <input class="rounded-5 border-0 px-4" type="button" value="Current Location" id="locationBtn">
+                <button type="button" id="closeBtn"><i class="fa fa-close"></i></button>
+                <button class="rounded-5 border-0 px-4" type="button" id="locationBtn">Current Location</button>
             </form>
         </div>
     </div>
@@ -83,7 +84,7 @@
                     <form class="form">
                         <input class="rounded-5 border-0 focus-ring" type="text"
                             placeholder="Enter your email to subscribe" id="subscribeInput">
-                        <input class="rounded-5 border-0" type="button" value="Subscribe" id="submit">
+                        <button class="rounded-5 border-0" type="button" id="submit">Subscribe</button>
                     </form>
                 </div>
                 <div class="col-lg-3 offset-1">
@@ -101,7 +102,6 @@
 
     <!-- ----------General JS---------- -->
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap-autocomplete.js"></script>
     <script src="./js/datalist-css.min.js"></script>
     <!-- ----------Main JS---------- -->
     <script src="./js/main.js"></script>

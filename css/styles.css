@@ -16,7 +16,7 @@ body {
     color: #019AD8;
 }
 
-.form input[type="button"] {
+.form button {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -27,7 +27,7 @@ body {
     transition: 0.3s all;
 }
 
-form input[type="button"]:hover {
+form button:hover {
     background-color: #019bd8af;
 }
 
@@ -86,6 +86,16 @@ datalist option:focus {
     color: #1E202B;
     background-color: #019AD8;
     outline: 0 none;
+}
+
+#closeBtn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 170px;
+    bottom: 55px;
 }
 
 /* ----------Forecast---------- */

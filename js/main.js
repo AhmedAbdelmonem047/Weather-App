@@ -3,6 +3,7 @@ const searchInput = document.getElementById('searchInput');
 const locationBtn = document.getElementById('locationBtn');
 const forecastList = Array.from(document.querySelectorAll('.forecast'));
 const locationList = document.getElementById('locationList');
+const closeBtn = document.getElementById('closeBtn');
 // --------------------------------- //
 
 
@@ -92,6 +93,10 @@ searchInput.addEventListener('keyup', (e) => {
 
 locationList.addEventListener('click', (e) => {
     getForecast(e.target.innerText);
+})
+
+closeBtn.addEventListener('click', () => {
+    searchInput.value = '';
 })
 // ----------------------------------- //
 
